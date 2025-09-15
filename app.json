@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "test-app2",
-    "slug": "test-app2",
+    "name": "airbnb-clone",
+    "slug": "airbnb-clone",
+    "scheme": "airbnb-clone-schema",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +26,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

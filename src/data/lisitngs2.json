@@ -1,0 +1,72 @@
+[
+  {
+    "id": "9",
+    "imageUri": "https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Charming Farmhouse",
+    "location": "Tuscany, Italy",
+    "pricePerNight": 220,
+    "nights": 3,
+    "rating": 4.8,
+    "totalReviews": 45
+  },
+  {
+    "id": "10",
+    "imageUri": "https://plus.unsplash.com/premium_photo-1681922761181-ee59fa91edc7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "City Flat Near Metro",
+    "location": "Mumbai, India",
+    "pricePerNight": 110,
+    "nights": 2,
+    "rating": 4.3,
+    "totalReviews": 170
+  },
+  {
+    "id": "11",
+    "imageUri": "https://images.unsplash.com/photo-1669694575282-03ed7faf6360?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Elegant Loft in Barcelona",
+    "location": "Barcelona, Spain",
+    "pricePerNight": 250,
+    "nights": 2,
+    "rating": 4.7,
+    "totalReviews": 90
+  },
+  {
+    "id": "12",
+    "imageUri": "https://plus.unsplash.com/premium_photo-1675745330148-1f7e5a7674a5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Rustic Cottage in the Hills",
+    "location": "Shimla, India",
+    "pricePerNight": 130,
+    "nights": 3,
+    "rating": 4.6,
+    "totalReviews": 110
+  },
+  {
+    "id": "13",
+    "imageUri": "https://images.unsplash.com/photo-1668435528344-b70cedd6df88?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Lakehouse Escape",
+    "location": "Ontario, Canada",
+    "pricePerNight": 270,
+    "nights": 2,
+    "rating": 4.9,
+    "totalReviews": 75
+  },
+  {
+    "id": "14",
+    "imageUri": "https://images.unsplash.com/photo-1732162933717-e87940716e10?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Stylish Guest Room",
+    "location": "Delhi, India",
+    "pricePerNight": 65,
+    "nights": 1,
+    "rating": 4.2,
+    "totalReviews": 200
+  },
+  {
+    "id": "15",
+    "imageUri": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Downtown Condo",
+    "location": "Chicago, USA",
+    "pricePerNight": 180,
+    "nights": 2,
+    "rating": 4.5,
+    "totalReviews": 130
+  }
+]

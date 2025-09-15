@@ -1,0 +1,57 @@
+import { StyleSheet, Text, TextInput, View } from "react-native";
+import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { Feather } from "@expo/vector-icons";
+import ListingsSlide from "../../components/ListingsSlide";
+
+const Home = () => {
+  return (
+    <SafeAreaView style={{ backgroundColor: "white", flex: 1 }}>
+      <View style={styles.container}>
+        <View style={styles.searchBox}>
+          <Feather name="search" size={16} color="black" />
+          <Text style={{ fontSize: 16, fontWeight: "500" }}>
+            Start your search
+          </Text>
+        </View>
+      </View>
+      <ListingsSlide/>
+    </SafeAreaView>
+  );
+};
+
+export default Home;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#F5F5F5",
+    paddingVertical: 80,
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.18,
+    shadowRadius: 4.59,
+    elevation: 5,
+  },
+  searchBox: {
+    backgroundColor: "white",
+    color: "black",
+    marginHorizontal: 40,
+    borderRadius: 40,
+    height: 60,
+    flexDirection: "row",
+    gap: 6,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.19,
+    shadowRadius: 5.62,
+    elevation: 6,
+  },
+});
