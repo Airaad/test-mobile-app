@@ -1,8 +1,10 @@
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import ListingsSlide from "../../components/ListingsSlide";
+import listingData from "../../data/listings.json";
+import listingData2 from "../../data/lisitngs2.json";
 
 const Home = () => {
   return (
@@ -15,7 +17,13 @@ const Home = () => {
           </Text>
         </View>
       </View>
-      <ListingsSlide/>
+      <ScrollView>
+        <ListingsSlide title="Popular homes in New Delhi" data={listingData} />
+        <ListingsSlide
+          title="Available next month in Bengaluru"
+          data={listingData2}
+        />
+      </ScrollView>
     </SafeAreaView>
   );
 };

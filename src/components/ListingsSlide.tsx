@@ -1,31 +1,46 @@
-import { FlatList, Image, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import ListingItem from "./ListingItem";
 import listingData from "../data/listings.json";
 import { AntDesign } from "@expo/vector-icons";
 
-const ListingsSlide = () => {
+interface listing {
+  id: string;
+  imageUri: string;
+  title: string;
+  location: string;
+  pricePerNight: number;
+  nights: number;
+  rating: number;
+  totalReviews: number;
+}
+
+type listingSlideProps = {
+  title: string;
+  data: listing[];
+};
+const ListingsSlide = ({ title, data }: listingSlideProps) => {
   return (
-    <>
+    <View>
       <View style={styles.titleContainer}>
         <Text
           style={{
             fontSize: 19,
-            fontWeight: "500",
+            fontWeight: "700",
           }}
         >
-          Popular homes in New Delhi
+          {title}
         </Text>
         <AntDesign name="right" size={16} color="black" />
       </View>
       <FlatList
-        data={listingData}
+        data={data}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <ListingItem listing={item} />}
         horizontal
         showsHorizontalScrollIndicator={false}
       />
-    </>
+    </View>
   );
 };
 

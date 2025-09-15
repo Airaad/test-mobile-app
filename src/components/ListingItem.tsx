@@ -39,6 +39,14 @@ const styles = StyleSheet.create({
     width: 180,
     height: 180,
     borderRadius: 20,
+    shadowColor: "#000000",
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.17,
+    shadowRadius: 3.05,
+    elevation: 4,
   },
   titelText: {
     fontSize: 16,
