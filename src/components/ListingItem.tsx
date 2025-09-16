@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Pressable } from "react-native";
 import React from "react";
+import { useRouter } from "expo-router";
 
 interface listing {
   id: string;
@@ -16,19 +17,25 @@ type ListingItemProps = {
 };
 
 const ListingItem = ({ listing }: ListingItemProps) => {
+  const router = useRouter();
   return (
-    <View style={{ paddingHorizontal: 20, paddingVertical: 10, gap: 5 }}>
+    <Pressable
+      onPress={() => router.push(`/listing/${listing.id}`)}
+      style={{ paddingLeft: 20, paddingRight: 7, paddingVertical: 5, gap: 5 }}
+    >
       <Image
         source={{
           uri: listing.imageUri,
         }}
         style={styles.imageStyle}
       />
-      <Text style={styles.titelText}>Room in {listing.location}</Text>
-      <Text style={styles.priceText}>
-        ${listing.pricePerNight} for {listing.nights} nights {listing.rating}
-      </Text>
-    </View>
+      <View>
+        <Text style={styles.titelText}>Room in {listing.location}</Text>
+        <Text style={styles.priceText}>
+          ${listing.pricePerNight} for {listing.nights} nights {listing.rating}
+        </Text>
+      </View>
+    </Pressable>
   );
 };
 
@@ -36,8 +43,8 @@ export default ListingItem;
 
 const styles = StyleSheet.create({
   imageStyle: {
-    width: 180,
-    height: 180,
+    width: 160,
+    height: 150,
     borderRadius: 20,
     shadowColor: "#000000",
     shadowOffset: {
@@ -46,14 +53,15 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.17,
     shadowRadius: 3.05,
-    elevation: 4,
+    elevation: 2,
   },
   titelText: {
-    fontSize: 16,
-    fontWeight: "500",
+    fontSize: 13,
+    fontWeight: "600",
     marginLeft: 7,
   },
   priceText: {
+    fontSize: 11,
     fontWeight: "400",
     marginLeft: 7,
   },

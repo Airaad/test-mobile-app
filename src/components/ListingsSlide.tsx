@@ -1,7 +1,6 @@
 import { FlatList, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import ListingItem from "./ListingItem";
-import listingData from "../data/listings.json";
 import { AntDesign } from "@expo/vector-icons";
 
 interface listing {
@@ -25,7 +24,7 @@ const ListingsSlide = ({ title, data }: listingSlideProps) => {
       <View style={styles.titleContainer}>
         <Text
           style={{
-            fontSize: 19,
+            fontSize: 18,
             fontWeight: "700",
           }}
         >
@@ -52,7 +51,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingHorizontal: 20,
     marginTop: 30,
-    marginBottom: 15,
+    marginBottom: 10,
     gap: 6,
   },
 });

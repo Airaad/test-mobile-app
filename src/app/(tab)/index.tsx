@@ -1,6 +1,5 @@
 import { ScrollView, StyleSheet, Text, TextInput, View } from "react-native";
 import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { Feather } from "@expo/vector-icons";
 import ListingsSlide from "../../components/ListingsSlide";
 import listingData from "../../data/listings.json";
@@ -8,7 +7,7 @@ import listingData2 from "../../data/lisitngs2.json";
 
 const Home = () => {
   return (
-    <SafeAreaView style={{ backgroundColor: "white", flex: 1 }}>
+    <ScrollView style={{ backgroundColor: "white", flex: 1 }}>
       <View style={styles.container}>
         <View style={styles.searchBox}>
           <Feather name="search" size={16} color="black" />
@@ -24,7 +23,7 @@ const Home = () => {
           data={listingData2}
         />
       </ScrollView>
-    </SafeAreaView>
+    </ScrollView>
   );
 };
 
@@ -33,7 +32,7 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#F5F5F5",
-    paddingVertical: 80,
+    paddingVertical: 60,
     shadowColor: "#000000",
     shadowOffset: {
       width: 0,
@@ -46,9 +45,9 @@ const styles = StyleSheet.create({
   searchBox: {
     backgroundColor: "white",
     color: "black",
-    marginHorizontal: 40,
+    marginHorizontal: 20,
     borderRadius: 40,
-    height: 60,
+    height: 50,
     flexDirection: "row",
     gap: 6,
     justifyContent: "center",
