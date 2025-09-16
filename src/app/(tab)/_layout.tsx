@@ -11,13 +11,13 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#FF385C",
+        headerShown: false,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: "Explore",
-          headerShown: false,
           tabBarIcon: ({ color }) => (
             <Feather name="search" size={24} color={color} />
           ),
@@ -28,7 +28,6 @@ export default function TabLayout() {
         name="wishlist"
         options={{
           title: "Wishlists",
-          headerShown: false,
           tabBarIcon: ({ color }) => (
             <Ionicons name="heart-outline" size={24} color={color} />
           ),
@@ -39,7 +38,6 @@ export default function TabLayout() {
         name="trips"
         options={{
           title: "Trips",
-          headerShown: false,
           tabBarIcon: ({ color }) => (
             <FontAwesome5 name="airbnb" size={24} color={color} />
           ),
